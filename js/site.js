@@ -1,7 +1,7 @@
 (function () {
   const CART_KEY = "njbaskets.cart";
   const RECEIPT_KEY = "njbaskets.receipt";
-  const SHOP_EMAIL = "hello@njbaskets.example";
+  const SHOP_EMAIL = "info@nj-baskets-handmade.boutique";
   const FULFILL = {
     pickup: "Pickup at the barn in Califon",
     nj: "Ship to a New Jersey address",
