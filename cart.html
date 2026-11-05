@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your bag · NJ Baskets</title>
+  <meta name="description" content="Review the baskets you want from NJ Baskets and send an order note to the Califon workshop.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500..700;1,9..144,500..700&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="cart">
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="announce">
+    <p class="wrap announce-inner">Holiday hampers are on the bench. <a href="basket.html?id=cape-may-hamper">Order the Cape May hamper</a> by December 10 for New Jersey delivery before Christmas.</p>
+  </div>
+  <header class="site-header">
+    <div class="wrap header-bar">
+      <a class="logo" href="index.html">
+        <svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+          <path d="M5 13h22l-2.2 13H7.2L5 13z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+          <path d="M9 13c.2-5 4.2-8 7-8s6.8 3 7 8" fill="none" stroke="currentColor" stroke-width="1.6"/>
+          <path d="M11 13.5v12M16 13v12.5M21 13.5v12M8 18h16M8 22.5h16" stroke="currentColor" stroke-width="1"/>
+        </svg>
+        <span>NJ Baskets</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav class="site-nav" id="site-nav" aria-label="Primary">
+        <a href="shop.html">Shop</a>
+        <a href="craft.html">The craft</a>
+        <a href="about.html">Workshop</a>
+        <a href="visit.html">Visit</a>
+      </nav>
+      <a class="bag-link" href="cart.html" aria-current="page">Bag <span class="bag-count" data-cart-count>0</span></a>
+    </div>
+  </header>
+  <main id="main">
+    <div class="wrap page">
+      <header class="page-intro">
+        <p class="kicker">Your bag</p>
+        <h1 id="cart-title">Baskets to be woven.</h1>
+        <p class="lede" id="cart-lede">Send a note and we confirm by email before we start. Payment is by invoice, not on this page.</p>
+      </header>
+      <noscript class="noscript">The bag needs JavaScript. You can still write <a href="mailto:hello@njbaskets.example">hello@njbaskets.example</a>.</noscript>
+      <div id="cart-layout" class="cart-layout">
+        <div id="cart-lines"></div>
+        <form id="order-form" class="order-panel form" novalidate>
+          <h2>Send the order</h2>
+          <p class="fine">We’ll reply within two business days with a ship quote and an invoice. We start weaving after you say yes. <a href="privacy.html">Privacy</a>.</p>
+          <p class="form-alert" data-form-alert role="alert" hidden></p>
+          <div class="field">
+            <label for="name">Name <span class="req" aria-hidden="true">*</span><span class="sr-only"> (required)</span></label>
+            <input id="name" name="name" required autocomplete="name" maxlength="80">
+          </div>
+          <div class="field">
+            <label for="email">Email <span class="req" aria-hidden="true">*</span><span class="sr-only"> (required)</span></label>
+            <input id="email" name="email" type="email" required autocomplete="email" maxlength="120">
+          </div>
+          <div class="field">
+            <label for="fulfillment">How should it get to you? <span class="req" aria-hidden="true">*</span><span class="sr-only"> (required)</span></label>
+            <select id="fulfillment" name="fulfillment" required>
+              <option value="pickup">I’ll pick it up in Califon</option>
+              <option value="nj">Ship it inside New Jersey</option>
+              <option value="us">Ship it elsewhere in the U.S.</option>
+            </select>
+          </div>
+          <div class="field" id="address-field" hidden>
+            <label for="address">Address <span class="req" aria-hidden="true">*</span><span class="sr-only"> (required)</span></label>
+            <textarea id="address" name="address" rows="3" autocomplete="street-address" maxlength="240"></textarea>
+          </div>
+          <div class="field">
+            <label for="notes">Notes for the bench</label>
+            <textarea id="notes" name="notes" maxlength="1000" placeholder="A monogram, a date you need it, or anything the basket has to fit."></textarea>
+          </div>
+          <button class="btn btn-primary" type="submit">Prepare this order</button>
+        </form>
+      </div>
+      <div id="receipt" hidden></div>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <a class="logo logo-footer" href="index.html">NJ Baskets</a>
+          <p class="footer-note">Handmade baskets from a barn in Califon, New Jersey. White oak, willow, and seagrass. Signed and dated.</p>
+        </div>
+        <div>
+          <h2>Shop</h2>
+          <ul>
+            <li><a href="shop.html">All baskets</a></li>
+            <li><a href="shop.html?cat=Everyday">Everyday</a></li>
+            <li><a href="shop.html?cat=Garden">Garden</a></li>
+            <li><a href="shop.html?cat=Home">For the house</a></li>
+            <li><a href="cart.html" aria-current="page">Your bag</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Workshop</h2>
+          <ul>
+            <li><a href="about.html">Our story</a></li>
+            <li><a href="craft.html">How we weave</a></li>
+            <li><a href="visit.html">Visit and contact</a></li>
+            <li><a href="privacy.html">Privacy</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Visit</h2>
+          <p>The Basket Barn<br>19 Splint Lane<br>Califon, NJ 07830</p>
+          <p style="margin-top:0.75rem"><a href="mailto:hello@njbaskets.example">hello@njbaskets.example</a></p>
+        </div>
+      </div>
+      <div class="footer-base">
+        <p>© 2026 NJ Baskets. Woven in New Jersey.</p>
+        <p><a href="privacy.html">Privacy</a> · Thu–Sat 10–5 · Sun 11–3</p>
+      </div>
+    </div>
+  </footer>
+  <script src="js/products.js"></script>
+  <script src="js/site.js"></script>
+</body>
+</html>
